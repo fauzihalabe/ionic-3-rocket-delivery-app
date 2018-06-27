@@ -1,16 +1,70 @@
-// http://ionicframework.com/docs/theming/
+//Import font
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,700');
+//Global 
+* {
+    font-family: 'Montserrat', sans-serif;
+}
 
+//Color
+.purple {
+    color: $purple
+}
+.orange {
+    color: $orange
+}
+.dark {
+    color: $dark
+}
+.snow {
+    color: $snow
+}
+.gray {
+    color: $gray
+}
 
-// App Global Sass
-// --------------------------------------------------
-// Put style rules here that you want to apply globally. These
-// styles are for the entire app and not just one component.
-// Additionally, this file can be also used as an entry point
-// to import other Sass files to be included in the output CSS.
-//
-// Shared Sass variables, which can be used to adjust Ionic's
-// default Sass variables, belong in "theme/variables.scss".
-//
-// To declare rules for a specific mode, create a child rule
-// for the .md, .ios, or .wp mode classes. The mode class is
-// automatically applied to the <body> element in the app.
+//Align
+.center {
+    text-align: center
+}
+
+//Margin
+.no-margin {
+    margin: 0px
+}
+.mg-top-5 {
+    margin-top: 5px;
+}
+.mg-top-10 {
+    margin-top: 10px;
+}
+.mg-top-20 {
+    margin-top: 20px;
+}
+.mg-top-30 {
+    margin-top: 30px;
+}
+.mg-top-40 {
+    margin-top: 40px;
+}
+
+//Padding
+.no-padding {
+    padding: 0px
+}
+.padding-40 {
+    padding: 40px
+}
+.padding-top-10-percent {
+    padding-top: 10%
+}
+.padding-top-30 {
+    padding-top: 30px
+}
+
+//Font style
+.bold {
+    font-weight: 700
+}
+.light {
+    font-weight: 300
+}
