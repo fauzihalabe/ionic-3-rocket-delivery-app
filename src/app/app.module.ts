@@ -6,6 +6,9 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+//Plugin
+import { IonicStorageModule } from '@ionic/storage';
+
 //Firebase config
 import { firebaseConfig } from '../configs/firebase';
 import { AngularFireModule } from 'angularfire2';
@@ -18,6 +21,7 @@ import { FirebaseProvider } from '../providers/firebase';
 
 //Pages
 import { LoginPageModule } from '../pages/login/login.module';
+import { HomePageModule } from '../pages/home/home.module';
 
 @NgModule({
   declarations: [
@@ -26,13 +30,15 @@ import { LoginPageModule } from '../pages/login/login.module';
   imports: [
     //Pages
     LoginPageModule,
+    HomePageModule,
     //Others
     BrowserModule,
     BrowserAnimationsModule,
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFirestoreModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [

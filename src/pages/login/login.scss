@@ -2,14 +2,14 @@ page-login {
     .bg-login {
         width: 100%;
         height: 100%;
-        background-image: url('/assets/imgs/login-bg.png');
+        background-image: url('../assets/imgs/login-bg.png');
         background-size: cover;
         background-position: center;
     }
     .bg-register {
         width: 100%;
-        height: fit-content;
-        background-image: url('/assets/imgs/register-bg.jpg');
+        height: 100%;
+        background-image: url('../assets/imgs/register-bg.jpg');
         background-size: cover;
         background-position: center;
     }
