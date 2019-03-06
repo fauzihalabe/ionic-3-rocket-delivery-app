@@ -1,0 +1,70 @@
+page-menu {
+    .toolbar-background {
+        background: #FDB813
+    }
+
+    .brown-icon {
+        color: #4B4237
+    }
+
+    .bg-transparent {
+        background: transparent
+    }
+
+    .toolbar-title  {
+        color: #4B4237;
+        font-size: 20px;
+        text-align: left
+    }
+
+    .featured-title {
+        color: #4B4237;
+        font-weight: 700;
+        margin-top: 15px !important
+    }
+
+    .border-img {
+        border: 2px solid #702C91;
+        width: 45px !important;
+        height: 45px !important;
+    }
+
+    .item-title {
+        color: #4B4237;
+        font-weight: 700;
+        width: 80%
+    }
+
+    ion-item {
+        border-top: 0px !important;
+        border-bottom: 2px solid #4B4237 !important;
+        padding: 5px 0px !important
+    }
+
+    ion-list {
+        margin-top: 10px !important
+    }
+
+    .item-description {
+        color: #4B4237;
+        font-size: 100;
+        font-size: 12px;
+        font-style: italic;
+        width: 80%
+    }
+
+    .item-price {
+        color: #4B4237;
+        position: absolute;
+        right: 0;
+        bottom: 18px
+    }
+
+    .item-inner {
+        border-bottom: 0px !important
+    }
+
+    .list-bebidas {
+        margin-top: 60px
+    }
+}

@@ -16,8 +16,10 @@ export class MyApp {
       //Decidir para qual pagina levar usuário
       this.storage.get('usuario')
       .then((usuario) => {
+        console.log(usuario)
         if(usuario){
-          this.rootPage = 'HomePage';
+          // this.rootPage = 'HomePage';
+           this.rootPage = 'MenuPage';
         }
         else {
           this.rootPage = 'LoginPage'

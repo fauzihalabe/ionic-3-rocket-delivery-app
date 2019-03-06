@@ -1,0 +1,49 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button icon-only class="bg-transparent">
+      <ion-icon class="brown-icon" name="menu"></ion-icon>
+    </button>
+
+    <ion-title>
+      Menu
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  <!-- LIST -->
+  <div>
+    <h5 class="featured-title">Burgers</h5>
+
+    <ion-list>
+      <ion-item *ngFor="let b of burgers">
+        <ion-avatar item-start>
+          <img class="border-img" [src]="b.image">
+        </ion-avatar>
+        <p class="item-title">{{b.name}}</p>
+        <p class="item-description">{{b.description}}</p>
+        <p class="item-price">R${{b.price}}</p>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <!-- LIST -->
+  <div class="list-bebidas">
+    <h5 class="featured-title">Para matar a sede</h5>
+
+    <ion-list>
+      <ion-item *ngFor="let d of drinks">
+        <ion-avatar item-start>
+          <img class="border-img" [src]="d.image">
+        </ion-avatar>
+        <p class="item-title">{{d.name}}</p>
+        <p class="item-description">{{d.description}}</p>
+        <p class="item-price">R${{d.price}}</p>
+      </ion-item>
+    </ion-list>
+  </div>
+
+</ion-content>

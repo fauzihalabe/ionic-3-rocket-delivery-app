@@ -95,6 +95,7 @@ export class LoginPage {
         let uid = res.user.uid;
         this.firebaseProvider.getUser(uid)
           .then((res) => {
+            console.log(res.data())
             let data = res.data();
             this.storage.set('usuario', data)
               .then(() => {
