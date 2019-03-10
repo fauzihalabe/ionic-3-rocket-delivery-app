@@ -1,12 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the HomePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { FirebaseProvider } from '../../providers/firebase';
 
 @IonicPage()
 @Component({
@@ -14,12 +8,23 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'home.html',
 })
 export class HomePage {
+  
+  burgers: any = [];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams,
+    private firebaseProvider: FirebaseProvider,
+  ) {
+    this.getBurgers();
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad HomePage');
+  getBurgers() {
+    this.firebaseProvider.getBurgers()
+      .then((r) => {
+        this.burgers = r;
+        console.log(this.burgers)
+      })
   }
 
 }

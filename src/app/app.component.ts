@@ -18,8 +18,7 @@ export class MyApp {
       .then((usuario) => {
         console.log(usuario)
         if(usuario){
-          // this.rootPage = 'HomePage';
-           this.rootPage = 'MenuPage';
+          this.rootPage = 'HomePage';
         }
         else {
           this.rootPage = 'LoginPage'

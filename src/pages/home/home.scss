@@ -1,3 +1,93 @@
 page-home {
+    .toolbar-background {
+        background: #FDB813;
+        border: none !important
+    }
 
+    .bg-transparent {
+        background: transparent
+    }
+
+    .white-icon {
+        color: #fff
+    }
+
+    .yellow-div {
+        width: 100%;
+        height: 50%;
+        background: #FDB813;
+    }
+
+    .fullscreenCenter {
+        width: 100%;
+        position: absolute;
+    }
+
+    .featured-text {
+        font-weight: 700;
+        color: #4B4237;
+        text-align: left;
+        margin-left: 25%;
+    }
+
+    .customSlides {
+        width: 100%;
+        position: absolute;
+        height: 38%;
+        top: 35%;
+    }
+
+    .customSlide {
+        width: 80% !important;
+        margin-left: 10%;
+        border-radius: 15px;
+        height: 80%;
+        background-size: cover;
+    }
+
+    .slide-zoom {
+        border-radius: 15px;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.297), rgba(0, 0, 0, 0.427), rgba(0, 0, 0, 0.489))
+    }
+
+    .burgerName {
+        color: #fff;
+        font-weight: 700;
+        font-size: 14px;
+        margin-top: 0px;
+        margin-bottom: 0px
+    }
+
+    .burgerInfo {
+        position: absolute;
+        bottom: 10px;
+        left: 20px;
+        text-align: left
+    }
+
+    .burgerPrice{
+        color: #fff;
+        font-weight: 700;
+        font-size: 9px;
+        margin-top: 0px;
+        margin-bottom: 0px
+    }
+
+    .addIcon {
+        position: absolute;
+        right: 20px;
+        bottom: 15px;
+        width: 6%;
+        opacity: 0.5;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: #4B4237 !important
+    }
+
+    .left20{
+        margin-left: 20% !important
+    }
 }

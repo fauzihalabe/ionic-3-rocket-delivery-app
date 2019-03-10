@@ -1,18 +1,38 @@
-<!--
-  Generated template for the HomePage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
   <ion-navbar>
-    <ion-title>home</ion-title>
+    <button ion-button icon-only class="bg-transparent">
+      <ion-icon class="white-icon" name="menu"></ion-icon>
+    </button>
+
+
+    <ion-buttons end>
+      <button ion-button icon-only class="bg-transparent">
+        <ion-icon class="white-icon" name="ios-cart-outline"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
 
+<ion-content>
+  <div class="yellow-div">
+    <div class="fullscreenCenter">
+      <h2 class="featured-text">Explore nossas<br>delícias ;p</h2>
+    </div>
 
-<ion-content padding>
 
+    <ion-slides pager class="customSlides">
+      <ion-slide *ngFor="let b of burgers; let i = index" class="customSlide" [ngStyle]="{ 'background-image': 'url(' + b.image + ')'}" [ngClass]="{'left20':i > 0}">
+        <!-- TEXT -->
+        <div class="burgerInfo">
+          <p class="burgerName">{{b.name}}</p>
+          <p class="burgerPrice">{{ b.price | currency:'BRL' }}</p>
+        </div>
+
+        <!-- ADD -->
+        <img class="addIcon" src="assets/imgs/add.png">
+      </ion-slide>
+    </ion-slides>
+  </div>
 </ion-content>
